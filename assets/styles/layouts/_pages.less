@@ -1,0 +1,23 @@
+body {
+  padding-top: 75px;
+
+  @media (max-width: @screen-sm-max) {
+    padding-top: 133px;
+  }
+
+  @media (max-width: @screen-xs-max) {
+    padding-top: 110px;
+  }
+
+}
+
+.container {
+  @media (min-width: @screen-lg-min) {
+    width: @container-md;
+  }
+}
+
+.welcome {
+  background-color: @gray-lighter;
+  padding: @grid-gutter-width (@grid-gutter-width/2);
+}

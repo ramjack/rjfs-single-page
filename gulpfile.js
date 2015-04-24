@@ -87,7 +87,7 @@ var cssTasks = function(filename) {
           'opera 12'
         ]
       })
-      .pipe($.minifyCss)
+      //.pipe($.minifyCss)
     .pipe(function() {
       return $.if(enabled.rev, $.rev());
     })

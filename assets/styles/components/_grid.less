@@ -1,10 +1,12 @@
 // Grid system
 .main {
+  .make-xs-column(@main-sm-columns);
   .make-sm-column(@main-sm-columns);
   .sidebar-primary & {
     .make-sm-column(@main-sm-columns - @sidebar-sm-columns);
   }
 }
+
 .sidebar {
   .make-sm-column(@sidebar-sm-columns);
 }
